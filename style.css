@@ -69,8 +69,9 @@ header {
 }
 
 #recherche { 
-    width: 75%;
+    width: 100%;
     display: flex;
+    border: solid 2px;
     flex-direction: column;
     justify-content: flex-start;
 }
