@@ -11,12 +11,13 @@
     <header>
 
         <img id="logo" src="images/logo/Reservia.svg" alt="logo"/>
+        <div></div>
         <nav class="nav">
             <ul class="nav-links">
                 <li><a class="nav-link" href="#section1">Hébergements</a></li>
                 <li><a class="nav-link" href="#section3">Activités</a></li>
             </ul>
-            <span id="inscrire">s'inscrire</span>
+            <a id="inscrire" href="#">s'inscrire</a>
         </nav>
         
     </header>
@@ -24,26 +25,36 @@
     <div id="recherche">
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text"/>
-        <input type="button"/>
-        <div>
-                <!-- Faire une liste et ajouter les images avec list-style-image pour personnaliser les puces -->
-            <p>filtres</p>
-            
+        <div class="zoneRecherche">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text"/>
+            <button>Rechercher</button>
+        </div>
+
+        <div class="filtres">
+            <p>Filtres</p>
             <div class="filtre">
                 <i class="fas fa-money-bill-wave"></i>
                 <p>Economique</p>
+            </div>
+            <div class="filtre">
+                <i class="fas fa-child"></i>
+                <p>Familial</p>
             </div> 
-            <i class="fas fa-child"></i>
-            <div class="filtre">Familial</div>
-            <i class="fas fa-heart"></i>
-            <div class="filtre">Romantique</div>            
-            <i class="fas fa-dog"></i>
-            <div class="filtre">Animaux autorisés</div>
+            <div class="filtre">
+                <i class="fas fa-heart"></i>
+                <p>Romantique</p>
+            </div>            
+            <div class="filtre">
+                <i class="fas fa-dog"></i>
+                <p>Animaux autorisés</p>
+            </div>
         </div>
-        <i class="fas fa-info"></i>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+        <div class="information">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </div>
 
 
