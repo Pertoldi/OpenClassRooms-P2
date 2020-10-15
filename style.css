@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(font/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+:root {
+    --charte: #0065FC;
+    --lightCharte: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+html{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+    all: unset;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    width: 300px;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav-link{
+    all: unset;
+    display: inline;
+}
+
+.nav-link::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: var(--charte);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--charte);
+}
+
+.nav-link:hover::before {
+    transform: scale(1);
+}
+
+#inscrire{
+    all: unset;
+    margin-top: 20px;
+    color: var(--charte);
+    font-weight: bolder;
+    align-self: center;
+}
+
+#recherche { 
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+div h1 {
+    margin: unset;
+}
+
+#recherche p {
+    margin: unset;
+}
+
+#soustitre {
+    padding-bottom: 10px;
+}
+
+.zoneRecherche {
+    border: solid 2px;
+    margin-block-end: 10px;
+}
+
+.filtres {
+    display: flex;
+    width: 650px;
+    justify-content: space-around;
+    border: solid 2px;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    margin-block-start: 10px;
+}
+
