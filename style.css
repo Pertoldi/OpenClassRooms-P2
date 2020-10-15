@@ -71,44 +71,103 @@ header {
 #recherche { 
     width: 100%;
     display: flex;
-    border: solid 2px;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 div h1 {
     margin: unset;
+    font-size: 1.5em;
 }
 
 #recherche p {
     margin: unset;
 }
 
-#soustitre {
-    padding-bottom: 10px;
+.zoneRecherche {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
 }
 
-.zoneRecherche {
-    border: solid 2px;
-    margin-block-end: 10px;
+#marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    color: black;
+    background-color: var(--grey);
+    border-radius: 15px 0 0 15px;
+}
+
+div div input{
+    height: 29px;
+}
+
+div button {
+    height: 35px;
+    width: 120px;
+    color: white;
+    font-weight: bolder;
+    background-color: var(--charte);
+    border-radius: 0 15px 15px 0;
+    border: none;
 }
 
 .filtres {
     display: flex;
     width: 650px;
     justify-content: space-around;
-    border: solid 2px;
+}
+
+.filtres p {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filtre {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid 1px var(--grey);
+    border-radius: 15px;
+    box-shadow: black;
+}
+
+.filtre i {
+    background-color: var(--lightCharte);
+    color: var(--charte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+.filtre p {
+    padding-right: 10px;
 }
 
 .information {
     display: flex;
     align-items: center;
-    margin-block-start: 10px;
+    padding-top: 20px;
+}
+
+.information i {
+    border: solid 1px var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    color: var(--charte);
+    border-radius: 15px;
+
 }
 
