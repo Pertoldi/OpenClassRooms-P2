@@ -9,6 +9,46 @@
     --grey: #F2F2F2;
 }
 
+/* ***********************************
+Mise en forme des différrents textes
+ *********************************** */
+
+h1 {
+    margin: unset;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 1.5em;
+}
+
+#recherche p {
+    margin: unset;
+}
+
+.filtres p {
+    font-weight: bolder;
+}
+
+.filtre p {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.hebergement h3 {
+    margin: 5px 0 0 30px;
+}
+
+.hebergement p {
+    margin: 5px 0 0 30px;
+}
+
+/* ******************************************************************
+Mise en place du haut de page, de la zone de recherche et des filtres 
+****************************************************************** */
+
 html{
     padding-left: 20px;
     padding-right: 20px;
@@ -22,7 +62,6 @@ body{
 header {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .nav {
@@ -60,6 +99,10 @@ header {
     transform: scale(1);
 }
 
+.nav-link:visited {
+    color: black;
+}
+
 #inscrire{
     all: unset;
     margin-top: 20px;
@@ -73,15 +116,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-div h1 {
-    margin: unset;
-    font-size: 1.5em;
-}
-
-#recherche p {
-    margin: unset;
 }
 
 .zoneRecherche {
@@ -104,7 +138,9 @@ div h1 {
 }
 
 div div input{
-    height: 29px;
+    box-sizing: border-box;
+    height: 35px;
+    border: solid 2px var(--grey);
 }
 
 div button {
@@ -119,15 +155,9 @@ div button {
 
 .filtres {
     display: flex;
-    width: 650px;
+    width: 750px;
+    padding-top: 20px;
     justify-content: space-around;
-}
-
-.filtres p {
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .filtre {
@@ -149,8 +179,9 @@ div button {
     width: 30px;
     border-radius: 15px;
 }
-.filtre p {
-    padding-right: 10px;
+
+.filtre p:hover {
+    color: var(--charte);
 }
 
 .information {
@@ -169,4 +200,95 @@ div button {
     color: var(--charte);
     border-radius: 15px;
 }
+
+/* *************************
+placement des herbergements 
+************************* */
+.herbergement-populaire {
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: var(--grey);
+}
+
+.hebergements {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.hebergement {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 3px white;
+}
+
+.img-hebergement {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.etoiles {
+    margin: 5px 0 10px 30px;
+    color: var(--charte);
+}
+
+
+.afficherplus {
+    font-weight: bolder;
+    margin-left: 30px;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+/* **************************
+placement des plus populaires
+ ************************** */
+
+ .populaire {
+    border: solid 1px;
+ }
+
+ #section2 {
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    margin-top: 25px;
+    border-radius: 15px;
+ }
+ 
+.titreEtIcone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chart-line {
+    margin-top: 15px;
+    padding-right: 30px;
+}
+
 
