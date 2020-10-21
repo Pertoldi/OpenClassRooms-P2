@@ -56,6 +56,15 @@ h2 {
 .populaire p {
     margin: 5px 0 50px 16px;
 }
+
+#section3 h2 {
+    margin-left: 0;
+}
+
+#section3 p {
+    font-weight: bold;
+    margin-left: 20px;
+}
 /* ******************************************************************
 Mise en place du haut de page, de la zone de recherche et des filtres 
 ****************************************************************** */
@@ -223,7 +232,7 @@ placement des herbergements
 #section1 {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 67%;
     min-width: 1050px;
     margin-top: 25px;
     border-radius: 15px;
@@ -335,3 +344,89 @@ placement des plus populaires
     color: var(--charte);
 }
 
+/* ********************
+Activités à Marseille 
+******************** */
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activite {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 3px var(--grey);
+    width: 360px;
+    margin-right: 40px;
+}
+
+.img-activite {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.bloc-2img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#img-1 {
+    height: 370px;
+}
+
+#img-2 {
+    height: 170px;
+}
+
+#img-3 {
+    height: 100px;
+    object-position: 50% 25%;
+}
+
+#img-4 {
+    height: 370px;
+}
+
+#img-5 {
+    height: 135px;
+    object-position: 50% 20%;
+}
+
+#img-6 {
+    height: 135px;
+    object-position: 50% 40%;
+}
+
+/* #activite-1 {
+    margin-right: 20px;
+}
+
+#activite-2 {
+    margin-right: 20px;
+}
+
+#activite-3 {
+    margin-right: 20px;
+}
+
+#activite-4 {
+    margin-right: 20px;
+} */
+
+#activite-5 {
+    margin-right: 0;
+}
+
+#activite-6 {
+    margin-right: 0;
+}
