@@ -70,8 +70,8 @@ Mise en place du haut de page, de la zone de recherche et des filtres
 ****************************************************************** */
 
 html{
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 body{
@@ -407,26 +407,22 @@ Activités à Marseille
     object-position: 50% 40%;
 }
 
-/* #activite-1 {
-    margin-right: 20px;
-}
-
-#activite-2 {
-    margin-right: 20px;
-}
-
-#activite-3 {
-    margin-right: 20px;
-}
-
-#activite-4 {
-    margin-right: 20px;
-} */
-
 #activite-5 {
     margin-right: 0;
 }
 
 #activite-6 {
     margin-right: 0;
+}
+
+/* *********************************
+                Footer
+********************************* */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    padding: 0 20px 0 20px;
+    background-color: var(--grey);
 }
