@@ -37,21 +37,32 @@ h2 {
     padding-left: 10px;
 }
 
+.information p {
+    padding-left: 10px;
+}
+
 .hebergement h3 {
-    margin: 5px 0 0 30px;
+    margin: 5px 0 0 16px;
 }
 
 .hebergement p {
-    margin: 5px 0 0 30px;
+    margin: 5px 0 0 16px;
 }
 
+.populaire h3 {
+    margin: 12px 0 0 16px;
+}
+
+.populaire p {
+    margin: 5px 0 50px 16px;
+}
 /* ******************************************************************
 Mise en place du haut de page, de la zone de recherche et des filtres 
 ****************************************************************** */
 
 html{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 body{
@@ -191,7 +202,7 @@ div button {
 }
 
 .information i {
-    border: solid 1px var(--grey);
+    border: solid 2px var(--grey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,14 +217,14 @@ placement des herbergements
 ************************* */
 .herbergement-populaire {
     display: flex;
-    justify-content: space-around;
-    border: solid 1px;
+    justify-content: space-between;
 }
 
 #section1 {
     display: flex;
     flex-direction: column;
-    width: 1050px;
+    width: 65%;
+    min-width: 1050px;
     margin-top: 25px;
     border-radius: 15px;
     background-color: var(--grey);
@@ -224,10 +235,12 @@ placement des herbergements
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around; */
+
+   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px; 
 
 }
 
@@ -240,7 +253,7 @@ placement des herbergements
     margin: 20px;
     background-color: white;
     border-radius: 15px;
-    border: solid 3px white;
+    border: solid 5px white;
 }
 
 .img-hebergement {
@@ -251,7 +264,7 @@ placement des herbergements
 }
 
 .etoiles {
-    margin: 5px 0 10px 30px;
+    margin: 5px 0 10px 15px;
     color: var(--charte);
 }
 
@@ -260,27 +273,39 @@ placement des herbergements
     font-weight: bolder;
     margin-left: 30px;
     width: 200px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 /* **************************
 placement des plus populaires
  ************************** */
 
- .populaire {
-    border: solid 1px;
- }
-
  #section2 {
-    border: solid 1px;
     display: flex;
     flex-direction: column;
     background-color: var(--grey);
+    margin-left: 40px;
     margin-top: 25px;
     border-radius: 15px;
  }
+
+ .populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
  
-.titreEtIcone {
+ .populaire {
+    display: flex;
+    background-color: white;
+    border: solid 5px white;
+    border-radius: 15px;
+    margin: 0 30px 40px 30px;
+    width: 400px;
+ }
+
+.titreEtIcone-populaire {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -291,4 +316,22 @@ placement des plus populaires
     padding-right: 30px;
 }
 
+.img-populaire {
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.populaire-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.etoiles-pop {
+    margin-left: 15px;
+    color: var(--charte);
+}
 
