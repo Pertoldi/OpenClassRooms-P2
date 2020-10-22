@@ -13,7 +13,6 @@
 Mise en forme des différrents textes
  *********************************** */
  body{
-    all: unset;
     font-family: 'raleway', Arial, Helvetica, sans-serif;
 }
 
@@ -27,6 +26,8 @@ h2 {
     margin-left: 30px;
     font-size: 1.5em;
 }
+
+
 
 .recherche p {
     margin: unset;
@@ -75,6 +76,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+.hebergement:visited {
+    color: black;
+}
+
+.populaire:visited {
+    color: black;
+} 
+
 /* ******************************************************************
 Mise en place du haut de page, de la zone de recherche et des filtres 
 ****************************************************************** */
@@ -98,7 +111,6 @@ header {
 }
 
 .nav-link{
-    all: unset;
     display: inline;
 }
 
@@ -239,7 +251,7 @@ placement des herbergements
     margin-right: 40px;
 }
 
-.section1 {
+#section1 {
     display: flex;
     flex-direction: column;
     width: 67%;
