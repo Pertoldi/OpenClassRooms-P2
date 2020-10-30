@@ -9,9 +9,9 @@
     --grey: #F2F2F2;
 }
 
-/* ***********************************
+/* *****************************************************************
 Mise en forme des différrents textes
- *********************************** */
+ ***************************************************************** */
  body{
     font-family: 'raleway', Arial, Helvetica, sans-serif;
 }
@@ -51,7 +51,7 @@ h2 {
 }
 
 .hebergement p {
-    margin: 5px 0 0 16px;
+    margin: 5px 0 5px 16px;
 }
 
 .populaire h3 {
@@ -59,7 +59,7 @@ h2 {
 }
 
 .populaire p {
-    margin: 5px 0 50px 16px;
+    margin: 5px 0 auto 16px;
 }
 
 #section3 h2 {
@@ -88,15 +88,20 @@ a:link {
     color: black;
 } 
 
-/* ******************************************************************
+.activite:visited {
+    color: black;
+}
+/* *****************************************************************
 Mise en place du haut de page, de la zone de recherche et des filtres 
-****************************************************************** */
+***************************************************************** */
+
+main {
+    margin: 0 40px 0 40px;
+}
 
 header {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .nav {
@@ -138,7 +143,6 @@ header {
 }
 
 .inscrire{
-    all: unset;
     margin-top: 20px;
     margin-left: 20px;
     color: var(--charte);
@@ -152,8 +156,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .zoneRecherche {
@@ -206,7 +208,6 @@ div button {
     justify-content: center;
     border: solid 1px var(--grey);
     border-radius: 15px;
-    box-shadow: black;
 }
 
 .filtre i {
@@ -241,50 +242,39 @@ div button {
     border-radius: 15px;
 }
 
-/* *************************
+/* *****************************************************************
 placement des herbergements 
-************************* */
+***************************************************************** */
 .herbergement-populaire {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 #section1 {
     display: flex;
     flex-direction: column;
     width: 67%;
-    min-width: 1050px;
     margin-top: 25px;
     border-radius: 15px;
     background-color: var(--grey);
 }
 
 .hebergements {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around; */
-
-   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 10px;
     margin-right: 10px; 
-
 }
 
 .hebergement {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 300px;
     height: auto;
     margin: 20px;
     background-color: white;
     border-radius: 15px;
-    border: solid 5px white;
+    border: solid 5px #fff;
 }
 
 .img-hebergement {
@@ -295,7 +285,7 @@ placement des herbergements
 }
 
 .etoiles {
-    margin: 5px 0 10px 15px;
+    margin: auto 0 10px 15px;
     color: var(--charte);
 }
 
@@ -307,9 +297,9 @@ placement des herbergements
     padding-bottom: 25px;
 }
 
-/* **************************
+/* *****************************************************************
 placement des plus populaires
- ************************** */
+ ***************************************************************** */
 
  #section2 {
     display: flex;
@@ -318,6 +308,7 @@ placement des plus populaires
     margin-left: 40px;
     margin-top: 25px;
     border-radius: 15px;
+    width: 33%;
  }
 
  .populaires {
@@ -330,10 +321,9 @@ placement des plus populaires
  .populaire {
     display: flex;
     background-color: white;
-    border: solid 5px white;
+    border: solid 5px #fff;
     border-radius: 15px;
     margin: 0 30px 40px 30px;
-    width: 400px;
  }
 
 .titreEtIcone-populaire {
@@ -363,18 +353,17 @@ placement des plus populaires
 
 .etoiles-pop {
     margin-left: 15px;
+    margin-top: auto;
     color: var(--charte);
 }
 
-/* ********************
+/* *****************************************************************
 Activités à Marseille 
-******************** */
+***************************************************************** */
 
 #section3 {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .activites {
@@ -389,8 +378,6 @@ Activités à Marseille
     background-color: white;
     border-radius: 20px;
     border: solid 3px var(--grey);
-    width: 360px;
-    margin-right: 40px;
 }
 
 .img-activite {
@@ -398,10 +385,19 @@ Activités à Marseille
     border-radius: 15px 15px 0 0;
 }
 
+#activite-1 {
+    width: 23%;
+}
+
+#activite-4 {
+    width: 23%;
+}
+
 .bloc-2img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 23%;
 }
 
 #img-1 {
@@ -431,17 +427,10 @@ Activités à Marseille
     object-position: 50% 40%;
 }
 
-#activite-5 {
-    margin-right: 0;
-}
 
-#activite-6 {
-    margin-right: 0;
-}
-
-/* *********************************
+/* *****************************************************************
                 Footer
-********************************* */
+***************************************************************** */
 
 footer {
     display: grid;
@@ -453,4 +442,62 @@ footer {
 .piedPage {
     margin: 40px 0 40px 40px;
     min-width: 300px;
+}
+
+/* *****************************************************************
+RESPONSIVE DESIGN
+***************************************************************** */
+
+@media all and (max-width: 1256px) {
+    .populaire h3 {
+        font-size: 0.9em;
+    }
+    
+    .populaire p {
+        font-size: 0.9em;
+    }
+
+    .img-populaire {
+        height: 125px;
+        width: 125px;
+    }
+
+    .hebergement h3 {
+        font-size: 0.9em;
+    }
+    
+    .hebergement p {
+        font-size: 0.9em;
+    }
+}
+
+@media all  and (max-width: 1087px) {
+    .populaire h3 {
+        font-size: 1em;
+    }
+    
+    .populaire p {
+        font-size: 1em;
+    }
+
+    .img-populaire {
+        height: 150px;
+        width: 150px;
+    }
+
+    .hebergement h3 {
+        font-size: 1em;
+    }
+    
+    .hebergement p {
+        font-size: 1em;
+    }
+
+    .herbergement-populaire {
+        flex-direction: column;
+    }
+
+    #section1 {
+        width: 100%;
+    }
 }
