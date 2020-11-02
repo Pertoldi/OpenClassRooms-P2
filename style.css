@@ -22,14 +22,27 @@ h1 {
     margin: unset;
     margin-bottom: 7px;
     font-size: 1.5em;
+    color: black;
 }
 
 h2 {
     margin-top: 35px;
     margin-left: 30px;
     font-size: 1.5em;
+    color: black;
 }
 
+h3{
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+a p {
+    color: black;
+}
 .recherche p {
     margin: unset;
 }
@@ -84,6 +97,7 @@ h2 {
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 .nav-link p {
