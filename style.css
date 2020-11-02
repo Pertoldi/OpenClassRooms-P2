@@ -38,6 +38,11 @@ h2 {
     font-weight: bolder;
 }
 
+.filtre-titre {
+    padding-bottom: 0.4em;
+    margin-right: 8px;
+}
+
 .filtre p {
     padding-right: 10px;
     padding-left: 10px;
@@ -79,6 +84,10 @@ h2 {
 
 a:link {
     text-decoration: none;
+}
+
+.nav-link p {
+    padding-top: 13px;
 }
 
 .hebergement:visited {
@@ -125,6 +134,10 @@ header {
     display: inline;
 }
 
+.nav-link p:hover {
+    color: var(--charte);
+}
+
 .nav-link::before {
     content: "";
     display: block;
@@ -136,9 +149,6 @@ header {
     transition: transform 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-    color: var(--charte);
-}
 
 .nav-link:hover::before {
     transform: scale(1);
@@ -159,6 +169,7 @@ header {
 /* ********** Recherche *********** */
 
 .recherche { 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -204,6 +215,7 @@ div div input{
 
 /* **************** FILTRES **************** */
 .filtres {
+    box-sizing: border-box;
     display: flex;
     width: 750px;
     padding-top: 20px;
@@ -212,12 +224,14 @@ div div input{
 }
 
 .filtre {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid 1px var(--grey);
     border-radius: 15px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 8px;
 }
 
 .filtre i {
@@ -228,6 +242,7 @@ div div input{
     align-items: center;
     height: 30px;
     width: 30px;
+    min-width: 30px; /* Pour contrecarer la reduction de taille en mode responsive */
     border-radius: 15px;
 }
 
@@ -248,6 +263,7 @@ div div input{
     align-items: center;
     height: 25px;
     width: 25px;
+    min-width: 25px;/* Idem filtre i */
     color: var(--charte);
     border-radius: 15px;
 }
@@ -604,7 +620,6 @@ RESPONSIVE DESIGN
         display: block;
         width: 100%;
         height: 3px;
-        margin-top: 20px;
         background: var(--charte);
         transform: scale(0);
         transition: transform 0.2s ease-in-out;
@@ -613,14 +628,16 @@ RESPONSIVE DESIGN
     li:hover::after {
         transform: scale(1);
     }
-
     /* fin des effets CSS */
+
+    .soustitre {
+        padding: 10px 0 10px 0;
+    }
 
     .hebergements {
         grid-template-columns: 1fr;
     }
     
-
     footer {
         grid-template-columns: 1fr;
     }
@@ -646,18 +663,21 @@ MODE TELEPHONE
     }
 
     h1 {
-        margin: 20px 15px 15px 15px;
+        margin: 20px 0 15px;
     }
 
     .soustitre {
-        padding: 0 15px 10px 15px;
+        margin-bottom: 10px;
     }
 
     /* mise en forme de la zone de recherche */
 
+    .recherche {
+        padding: 0 15px 0;
+    }
+
     .zoneRecherche {
         justify-content: center;
-        margin: 0 15px 0;
     }
 
     #marker {
@@ -682,11 +702,22 @@ MODE TELEPHONE
         width: 100%;
     }
 
-    .hebergement-populaire {
-        flex-direction: column-reverse;
+    /* Mise en forme des filtres */
+
+    .filtres {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .filtre-titre {
+        flex-basis: 100%;
     }
 
     /* Mise en forme des populaires */
+
+    .hebergement-populaire {
+        flex-direction: column-reverse;
+    }
 
     #section2 {
         border-radius: 0;
@@ -697,9 +728,14 @@ MODE TELEPHONE
     }
 
     .populaire {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin: 0 15px 10px;
     }
+
+    .img-populaire {
+        width: 125px;
+        height: 125px;
+    }
+
 
     /* Mise en forme des hebergements */
 
@@ -782,6 +818,41 @@ MODE TELEPHONE
 }
 
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 370px) {
 
+    body {
+        min-width: 300px;
+    }
+
+    .populaire-text {
+        font-size: 0.9em;
+    }
+
+    .img-hebergement {
+        height: 100px;
+    }
+
+    #img-1 {
+        height: 100px;
+    }
+
+    #img-2 {
+        height: 100px;
+    }
+    
+    #img-3 {
+        height: 100px;
+    }
+    
+    #img-4 {
+        height: 100px;
+    }
+    
+    #img-5 {
+        height: 100px;
+    }
+    
+    #img-6 {
+        height: 100px;
+    }
 }
