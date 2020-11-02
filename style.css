@@ -40,9 +40,6 @@ p {
     color: black;
 }
 
-a p {
-    color: black;
-}
 .recherche p {
     margin: unset;
 }
@@ -93,6 +90,10 @@ a p {
 .piedPage h3 {
     margin: 0;
     margin-bottom: 20px;
+}
+
+a{
+    color: black;
 }
 
 a:link {
