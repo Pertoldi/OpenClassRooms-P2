@@ -10,15 +10,15 @@ Lien vers la page du site : https://pertoldi.github.io/PertoldiAntoine_2_1210202
 Ce projet a débuté le 12 octobre 2020. 
 C'est un exercice de la plateforme OpenClassRooms dans le cadre de la formation dévelopeurweb.
 Il s'agit d'une intégration de maquette uniquement en HTML et CSS.
-Il m'a permis de découvrir Git/Github et la librairie FontAwesome en plus des bonnes pratique HTML/CSS. 
+Ce projet m'a permis de découvrir Git/Github et la librairie FontAwesome en plus des bonnes pratique HTML/CSS. 
 
 # Architecture du site:
 
 Le site est composé:
-- D'un header contenant le menu de navigation.
-- D'une zone de recherche (avec les différents filtres)
-- De 3 sections: Hebergement // Populaire // Activite
-- D'un footer
+- D'un header contenant le logo et le menu de navigation.
+- D'une zone de recherche (avec les différents filtres).
+- De 3 sections: Hebergements // Populaires // Activites.
+- D'un footer.
 
 # Credit:
 
